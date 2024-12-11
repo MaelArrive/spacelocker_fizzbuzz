@@ -31,6 +31,8 @@ app.get("/", (req, res) => {
   res.send("FizzBuzz API is running. Use POST /fizzbuzz to test.");
 });
 
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
+
+module.exports = server
