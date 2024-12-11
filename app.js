@@ -1,9 +1,16 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const generateFizzBuzz = require("./fizzbuzz");
+const monitorSystem = require('./monitor');
+const osUtils = require('os-utils');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+
+const CPU_THRESHOLD = 5;
+const ALERT_DURATION = 5;
+monitorSystem(CPU_THRESHOLD, ALERT_DURATION);
 
 app.use(bodyParser.json());
 
@@ -28,11 +35,11 @@ app.post("/fizzbuzz", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.send("FizzBuzz API is running. Use POST /fizzbuzz to test.");
+  res.send("FizzBuzz API is running. Use POST /fizzbuzz to test...");
 });
 
-const server = app.listen(PORT, () => {
+app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
 
-module.exports = server
+module.exports = app

@@ -1,0 +1,7 @@
+{"cpuUsage":"16.79","level":"warn","message":"CPU usage exceeded 5% for 5 seconds.","timestamp":"2024-12-11T12:47:13.852Z"}
+{"cpuUsage":"18.35","level":"warn","message":"CPU usage exceeded 5% for 5 seconds.","timestamp":"2024-12-11T12:47:18.877Z"}
+{"cpuUsage":"7.91","level":"warn","message":"CPU usage exceeded 5% for 5 seconds.","timestamp":"2024-12-11T12:47:23.885Z"}
+{"cpuUsage":"12.81","level":"warn","message":"CPU usage exceeded 5% for 5 seconds.","timestamp":"2024-12-11T12:47:28.894Z"}
+{"cpuUsage":"17.51","level":"warn","message":"CPU usage exceeded 5% for 5 seconds.","timestamp":"2024-12-11T12:47:33.902Z"}
+{"cpuUsage":"23.55","level":"warn","message":"CPU usage exceeded 5% for 5 seconds.","timestamp":"2024-12-11T12:47:55.038Z"}
+{"cpuUsage":"15.31","level":"warn","message":"CPU usage exceeded 5% for 5 seconds.","timestamp":"2024-12-11T12:48:00.060Z"}
